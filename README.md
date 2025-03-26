@@ -1,4 +1,4 @@
-# [NTIRE 2024 Challenge on Image Super-Resolution (x4)](https://cvlai.net/ntire/2024/) @ [CVPR 2024](https://cvpr.thecvf.com/)
+# [NTIRE 2025 Challenge on Image Super-Resolution (x4)](https://cvlai.net/ntire/2024/) @ [CVPR 2024](https://cvpr.thecvf.com/)
 
 ## How to test the baseline model?
 
