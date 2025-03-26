@@ -41,13 +41,11 @@ def select_model(args, device):
         name, data_range = f"{model_id:02}_Aimanga_baseline", 1.0
         model = Aimanga(num_in_ch=3, num_out_ch=3, scale=4, num_feat=64, num_block=23, num_grow_ch=32)
         loadnet = torch.load(model_path, map_location=torch.device('cpu'))
-        # print(loadnet['params_ema'].keys())
         if 'params_ema' in loadnet:
             keyname = 'params_ema'
         else:
             keyname = 'params'
         model.load_state_dict(loadnet[keyname], strict=True)
-
     else:
         raise NotImplementedError(f"Model {model_id} is not implemented.")
 
